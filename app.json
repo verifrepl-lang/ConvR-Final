@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "ConvR",
+    "slug": "convr",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "convr",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "ConvR сохраняет результаты конвертации в медиатеку",
+        "NSPhotoLibraryAddUsageDescription": "ConvR сохраняет файлы в медиатеку"
+      }
+    },
+    "android": {
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      "expo-document-picker",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "ConvR сохраняет файлы конвертации",
+          "savePhotosPermission": "ConvR сохраняет файлы конвертации",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
