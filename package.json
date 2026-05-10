@@ -2,6 +2,7 @@
   "name": "convr",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "npm",
   "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
@@ -51,4 +52,4 @@
     "jszip": "^3.10.1",
     "pako": "^2.1.0"
   }
-}
+  }
